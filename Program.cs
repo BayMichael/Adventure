@@ -20,6 +20,19 @@ namespace ChooseYourOwnAdventure
       string noiseChoice = Console.ReadLine();
       noiseChoice = noiseChoice.ToUpper();
 
+    // If the user types "NO", print this text
+      if (noiseChoice == "NO")
+      {
+        Console.WriteLine("Not much of an adventure if we don't leave our room!");
+        Console.WriteLine("THE END.");
+      }
+
+      // Else if noise == "YES", print this text
+      else if (noiseChoice == "YES")
+      {
+        Console.WriteLine("You walk into the hallway and see a light coming from under a door down the hall.");
+        Console.WriteLine("You walk towards it. Do you open it or knock?");
+      }
 
 
 
